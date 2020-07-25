@@ -3,7 +3,7 @@ About xlrd
 
 Home: http://www.python-excel.org/
 
-Package license: BSD 3-Clause and BSD with advertising
+Package license: BSD-3-Clause AND BSD-4-Clause
 
 Feedstock license: BSD-3-Clause
 
@@ -117,4 +117,5 @@ Feedstock Maintainers
 =====================
 
 * [@cokelaer](https://github.com/cokelaer/)
+* [@notestaff](https://github.com/notestaff/)
 
