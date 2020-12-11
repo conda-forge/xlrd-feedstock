@@ -5,11 +5,13 @@ Home: http://www.python-excel.org/
 
 Package license: BSD-3-Clause AND BSD-4-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xlrd-feedstock/blob/master/LICENSE.txt)
 
 Summary: Library for developers to extract data from Microsoft Excel (tm) spreadsheet files
 
+Development: https://github.com/python-excel/xlrd/
 
+Documentation: http://xlrd.readthedocs.io/en/stable/
 
 Current build status
 ====================
