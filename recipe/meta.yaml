@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: xlrd
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/x/xlrd/xlrd-{{ version }}.tar.gz
-  sha256: 546eb36cee8db40c3eaa46c351e67ffee6eeb5fa2650b71bc4c758a29a1b29b2
+  sha256: e1ae0dbdb0a4888e381255f9aefe3efcd7ea64a35666e7a03c3f3c9e4b44641b
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -23,7 +23,7 @@ requirements:
 
 test:
   files:
-    - test.xlsx
+    - test.xls
 
 about:
   home: 'http://www.python-excel.org/'
@@ -38,3 +38,4 @@ extra:
   recipe-maintainers:
    - cokelaer
    - notestaff
+   - mjhoptics
