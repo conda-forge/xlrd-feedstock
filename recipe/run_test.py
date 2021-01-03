@@ -1,6 +1,6 @@
 import xlrd
 
-wb = xlrd.open_workbook("test.xlsx")
+wb = xlrd.open_workbook("test.xls")
 sheet = wb.sheet_by_name("Sheet1")
 cell = sheet.cell(0, 0)
 print(cell.value)
