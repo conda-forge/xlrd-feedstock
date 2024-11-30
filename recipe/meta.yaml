@@ -5,23 +5,25 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/x/xlrd/xlrd-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/x/xlrd/xlrd-{{ version }}.tar.gz
   sha256: f72f148f54442c6b056bf931dbc34f986fd0c3b0b6b5a58d013c9aef274d0c88
 
 build:
-  number: 3
+  number: 4
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 
 requirements:
-  build:
-    - python >=3.6
+  host:
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   files:
     - test.xls
 
